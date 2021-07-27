@@ -36,6 +36,18 @@
             `
           );
         };
+
+        const getWeather = function (search) {
+          console.log(search);
+          $.ajax({
+            url: `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=8b8b4ad4c5470d168849b0b103dcf938`,
+            method: "GET",
+            dataType: "json",
+          }).done(function (results) {
+            console.log(results);
+            displayWeatherCard(results);
+          });
+        };
       });
     </script>
   </body>
