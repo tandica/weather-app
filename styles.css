@@ -1,3 +1,21 @@
 .card-deck {
   background-color: aqua;
+  border-radius: 15px;
+  margin-top: 1.5em;
+  width: 40%;
+}
+
+.card-body {
+}
+
+.card-title {
+  padding-left: 3em;
+}
+
+.icon {
+}
+
+.card-text {
+  padding-left: 3em;
+  padding-bottom: 1.5em;
 }
